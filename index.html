@@ -65,10 +65,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact"></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link ms-5 text-warning fw-bold font-awesome border border-black" href="#contact">Cart<i class="bi bi-cart4"></i><sup>(0)</sup></a>
-              </li>
-            </ul>
+               <li class="nav-item ms-0 mt-0 ">
+                <button type="button" class="btn btn-warning fw-bold shopping"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class=" fs-5"  ><i class="bi bi-cart"></i></span><span class="fs-5 ps-2">My Cart</span>
+                  <span class="quantity">(0)</span>
+                </button>
+            </li>
           </div>
         </div>
       </nav>
@@ -353,6 +354,22 @@
         </div>
 
 
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title cart-h5" id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="card border-0">
+              <ul class="listCard mb-5 mt-3 "></ul>
+              <div class="checkout">
+                <div class="total">0</div>
+                <div class="closeShopping">Proceed to CheckOut</div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- UP to 75% Off -->
         <div class="overflow-hidden my-5">
           <div class="row">
