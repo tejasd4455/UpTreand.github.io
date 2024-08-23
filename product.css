@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #f2f2f2;
+    padding: 1rem 0;
+    
+
+    
+}
+
+header .container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+header h1 {
+    margin: 0;
+
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.product-item {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+}
+.product-item h3{
+    color: goldenrod;
+    background-color: #E5E4E2;
+    font-family: 'Times New Roman', Times, serif;
+}
+.product-item p{
+    color: goldenrod;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #E5E4E2;
+
+}
+.product-item p:hover{
+    border: 1px solid black;
+    
+}
+.product-item p small{
+    color: grey;
+    font-size: 0.8rem;
+}
+.product-item h4{
+    font-family: "Lora", serif;
+  
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+    
+}
+
+.product-item button {
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grid-nav {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color:#f5f9ee ;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.grid-item:hover {
+    background-color: #d5eeff;
+    border: 4px  black;
+}
+
+/* Responsive layout for screens 768px and below */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive layout for screens 480px and below */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+@media(min-width: 768px) {
+    footer .footer-columns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .footer-column {
+        width: 22%;
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
